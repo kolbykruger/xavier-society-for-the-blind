@@ -3,23 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <base href="https://*SITE*.eternityhosting.com/" />
-    <link rel="canonical" href="https://*SITE*.eternityhosting.com/" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Search & Replace *SITE* with the name for the dev URL - I.E. 'atom' -> atom.eternityhosting.com -->
+    <!--base href="https://*SITE*.eternityhosting.com/">
+    <link rel="canonical" href="https://*SITE*.eternityhosting.com/"-->
+    <base href="http://127.0.0.1:3000/" >
+    <link rel="canonical" href="http://127.0.0.1:3000/">
 
     <title>DESIGN #1</title>
 
     <!-- Font Scripts -->
-    <script defer src="fonts.js" type="text/javascript"/></script>
+    <script defer src="js/fonts.js" type="text/javascript"></script>
 
     <!-- Internal Styles -->
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/fontawesome.min.css">
 
     <!-- External Styles -->
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.6/jquery.fancybox.min.css" />
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
-
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.6/jquery.fancybox.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
 </head>
 
 <body id="home">
@@ -28,7 +32,7 @@
     <div class="header" role="banner">
         <div class="logo">
             <a href="#" class="event_track" data-cat="Header" data-label="Logo">
-                <img src="images/atom_logo.svg" title="Return Home" alt="[[++site_name]] Logo"/>
+                <img src="https://eternityatom.com/images/atom_logo.svg" title="Return Home" alt="[[++site_name]] Logo"/>
             </a>
         </div>
         <div class="search_wrap">
@@ -192,7 +196,7 @@
         <div class="address">182 Main Street | Burlington, Vermont 05401</div>
         <div class="contact"><a href="tel:000-000-0000" aria-label="Call (000) 000-0000" class="event_track" data-cat="Footer" data-label="Phone">(000) 000-0000</a> | <a href="mailto:info@eternitymarketing.com" class="event_track" data-cat="Footer" data-label="Email">info@eternitymarketing.com</a></div>
         <div class="copyright" role="contentinfo">&copy; 2019 *SITE* | All Rights Reserved</div>
-        <div class="ewd"><a href="https://eternitywebdev.com/?utm_source=client&utm_campaign=[[++site_name:replace=` ==%20`]]" target="_blank" class="event_track" data-cat="Footer" data-label="Eternity Link"><img src="images/website_by_eternity.svg" alt="Website By Eternity"></a></div>
+        <div class="ewd"><a href="https://eternitywebdev.com/" target="_blank" class="event_track" data-cat="Footer" data-label="Eternity Link"><img src="https://eternityatom.com/images/website_by_eternity.svg" alt="Website By Eternity"></a></div>
     </div>
 </div>
 
