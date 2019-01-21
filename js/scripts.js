@@ -1,5 +1,5 @@
 // Links return false
-$('a, button, input[target="blank"]').click(function() {
+$('a, button, input[type="submit"]').click(function() {
     return false
 })
 
