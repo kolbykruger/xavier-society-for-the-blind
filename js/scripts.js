@@ -16,16 +16,6 @@ $('.scrollToTop').click(function(){
 	$('html, body').animate({scrollTop : 0},800);
 });
 
-//Detect Mobile
-function detectmobile() {if(window.innerWidth <= 768 && window.innerHeight <= 600) {return true;} else {return false;}}
-if(!detectmobile()){
-$('.tel').each(function() {
-    $(this).replaceWith(
-    $('<a href="tel:' + this.innerHTML + '">' + this.innerHTML + '</a>')
-    );
-});
-}
-
 //Responsive iFrame
 $('iframe[src*="youtube"]').wrap('<div class="responsiveIframe"/>');
 
