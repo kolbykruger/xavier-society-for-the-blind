@@ -22,13 +22,26 @@ blockquote::before{font-family:Arial; content:"\201C"; color:#ef4538; font-size:
 img{max-width: 100%; height: auto; vertical-align: bottom; border: none;}
 /*.event_track{border:1px solid red}*/
 
+/* Buttons */
+.buttons {display: flex; align-items: center; justify-content: flex-start; flex-flow: row wrap;}
+.buttons.left {justify-content: flex-start;}
+.buttons.center {justify-content: center;}
+.buttons.right {justify-content: flex-end;}
+.buttons > .button:only-child {margin: 0;}
+.button {display: inline-flex; align-items: center; margin: 0 1em 0 0; padding: 1em 1.5em; background: #ef4538; color: #fff; border-radius: 0.25em; transition: 150ms ease; text-decoration: none; user-select: none;}
+.button:hover, .button:focus { background: #f0574b; box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);}
+.button:active { box-shadow: 0 2px 4px 0 rgba(50,50,93,.1); transform: translateY(1px);}
+button.button, input[type="submit"].button {cursor: pointer; font-family: inherit; font-size: inherit; line-height: inherit; color: #fff; border: none; outline: none;}
+    
+    @media (max-width: 768px) {
+    .button {margin: 0 1em 1em 0;}
+    }
 
 /*Read More*/
 .more{height: 0; overflow: hidden;}
 .more button{padding:4px 8px; border-radius:3px; border: 1px solid rgba(0,0,0,.8); font-size: 1.2rem; text-transform: uppercase; background:#f1f1f1; color: rgba(0,0,0,.8); cursor:pointer; outline:none; -webkit-appearance: none;}
 
 /*Cutom RichTextRTE Styles*/
-a.button{background: #ef4538 !important; color: #fff; padding: 4px 8px; display: inline-block; border-radius: 3px; margin: 0 2px; text-decoration: none; text-transform: uppercase;}
 .rte_img_right{float:right; margin:0 0 10px 10px;}
 .rte_img_left{float:left; margin:0 10px 10px 0;}
 .rte_img_center{margin:10px auto; text-align: center; display: block;}
