@@ -1,5 +1,5 @@
 // Links return false
-$('a:not(.force), button, input[type="submit"]').click(function() {
+$('a:not(.force), button:not(.force), input[type="submit"]:not(.force)').click(function() {
     return false
 })
 
