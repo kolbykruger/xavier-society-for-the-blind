@@ -7,7 +7,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {d
 html{font-size: 62.5%;}
 html[lang="en"]{opacity:0;}
 html.wf-active,html.wf-inactive{opacity: 1; transition: opacity .4s ease-out; }
-body{color: rgba(0,0,0,.8); background: rgb(248, 248, 248); font-family: 'Montserrat', sans-serif; font-size: 1.6rem;}
+body{color: rgba(0,0,0,.8); background: rgb(248, 248, 248); font-family: 'Open Sans', sans-serif; font-size: 1.6rem;}
 p{font-size: 1.4rem; margin: 0 0 16px 0; font-weight: 400; line-height: 1.6;}
 p:last-of-type{margin: 0;}
 a{color: #ef4538;}
