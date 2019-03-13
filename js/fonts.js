@@ -1,7 +1,4 @@
 (function() {
-  if (sessionStorage.fonts) {
-    document.documentElement.classList.add('wf-active');
-  }else{
     WebFontConfig = {
       active: function() {
         sessionStorage.fonts = true;
@@ -18,9 +15,7 @@
       wf.async = true;
       s.parentNode.insertBefore(wf, s);
     })(document);
-  }
 })();
-
 
 //Roboto:300,400,400i,500,700  -  font-family: 'Roboto', sans-serif;
 //Roboto+Slab:300,400,700  -  font-family: 'Roboto Slab', serif;
