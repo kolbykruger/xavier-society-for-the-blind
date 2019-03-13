@@ -4,7 +4,7 @@ body#tinymce {padding: 8px; background: #fff; min-height: 100vh;}
 /*Base*/
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {display: block;}
 *{margin: 0; padding: 0; box-sizing: border-box;}
-html{font-size: 62.5%;}
+html{font-size: 62.5%; -webkit-text-size-adjust: 100%; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: optimizeLegibility;}
 html[lang="en"]{opacity:0;}
 html.wf-active,html.wf-inactive{opacity: 1; transition: opacity .4s ease-out;}
 body{color: rgba(0,0,0,.8); background: rgb(248, 248, 248); font-family: 'Open Sans', sans-serif; font-size: 1.6rem;}
