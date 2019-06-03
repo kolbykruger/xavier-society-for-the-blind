@@ -7,7 +7,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {d
 html{font-size: 62.5%; -webkit-text-size-adjust: 100%; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: optimizeLegibility;}
 html[lang="en"]{opacity:0;}
 html.wf-active,html.wf-inactive{opacity: 1; transition: opacity .4s ease-out;}
-body{color: rgba(0,0,0,.8); background: rgb(248, 248, 248); font-family: 'Open Sans', sans-serif; font-size: 1.6rem;}
+body{color: rgba(0,0,0,.8); background: rgb(248, 248, 248); font-family: 'Source Sans Pro', sans-serif; font-size: 1.6rem;}
 p{font-size: 1.6rem; margin: 0 0 16px 0; font-weight: 400; line-height: 1.6;}
 p:last-of-type{margin: 0;}
 a{color: #ef4538;}
@@ -83,6 +83,11 @@ button.button, input[type="submit"].button {cursor: pointer; font-family: inheri
 .header .search_wrap{position: absolute; right: 10px; border: 1px solid #e4e4e4; top: 10px; border-radius: 3px;}
 .header .search button{position: absolute; background: none; height: 100%; cursor: pointer; outline: 0; border: 0; color: #222; top: 50%; right: 0; padding: 0 10px; line-height: 100%; font-size: 1.2rem; transform: translateY(-50%);}
 .header .search input{-webkit-appearance: none; -moz-appearance: none; appearance: none; border-radius: 2px; border: 0; background: #fbfbfb; outline: 0; width: 100%; font-size: 1.4rem; padding: 8px 30px 8px 8px; color: #4e4e4e; font-style: italic;}
+
+.headerWrap .utility {background: #2b5892;}
+.headerWrap .utility .contents {max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: flex-end;}
+.headerWrap .utility .item {}
+.headerWrap .utility a {text-decoration: none; color: #fff; display: block; padding: 0.25em; margin-left: 1.5em; font-size: 1.4rem;}
 
     @media (max-width: 900px) {
     .header{height: 72px; display: flex; flex-flow: row nowrap; justify-content: space-between; align-items: center; margin: 0 auto;}
@@ -305,7 +310,7 @@ button.button, input[type="submit"].button {cursor: pointer; font-family: inheri
 
 .contact_layout .map{display:flex; flex-flow:row wrap; justify-content:center; align-items:center; padding:40px 0 20px 0; margin: 40px 0 0 0; width:100%; position: relative;}
 .contact_layout .map:before{content:''; display:block; width:70%; height: 1px; background: #d8d8d8; top:0; left:0; right:0; margin: 0 auto; position: absolute;}
-    
+
     @media (max-width: 960px) {
     .contact_layout .info_wrap .info{width:40%; padding:20px;}
     .contact_layout .info_wrap .form{width:60%; padding:20px;}
