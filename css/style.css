@@ -73,8 +73,8 @@ button.button, input[type="submit"].button {cursor: pointer; font-family: inheri
 
 /*Header*/
 .headerWrap{width: 100%;}
-.header{width: 100%; max-width: 1200px; margin: 0 auto; padding: 20px 10px; position: relative; display: flex; flex-flow: row wrap; justify-content: space-between; align-items: flex-end;}
-.header .logo{width: 50%; max-width: 240px;}
+.header{position: relative; width: 100%; max-width: 1200px; margin: 0 auto; padding: 10px; position: relative;}
+.header .logo{max-width: 150px; margin: 0 auto; padding: 0.5em 0 0; z-index: 10;}
 .header .logo a{display: block;}
 .header .logo img{width: 100%;}
 .header .mobile_icons{display: none;}
@@ -87,7 +87,7 @@ button.button, input[type="submit"].button {cursor: pointer; font-family: inheri
 .headerWrap .utility {background: #2b5892;}
 .headerWrap .utility .contents {max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: flex-end;}
 .headerWrap .utility .item {}
-.headerWrap .utility a {text-decoration: none; color: #fff; display: block; padding: 0.25em; margin-left: 1.5em; font-size: 1.4rem;}
+.headerWrap .utility a {text-decoration: none; color: #fff; display: block; padding: 0.5em; margin-left: 1.5em; font-size: 1.4rem;}
 
     @media (max-width: 900px) {
     .header{height: 72px; display: flex; flex-flow: row nowrap; justify-content: space-between; align-items: center; margin: 0 auto;}
@@ -97,9 +97,9 @@ button.button, input[type="submit"].button {cursor: pointer; font-family: inheri
     }
 
 /*Nav*/
-.nav{user-select: none; text-align: center; z-index: 10; display: flex; flex-flow: row wrap; align-items: center;}
+.nav{user-select: none; text-align: center; z-index: 10; margin-top: 1em; display: flex; flex-flow: row wrap; align-items: center; justify-content: center;}
 .nav .item{position: relative;}
-.nav .item a{margin:0 32px 0 0; display: block; color: #4e4e4e; text-decoration: none; font-weight: 400; font-size: 1.6rem; transition: color 0.3s cubic-bezier(.25,.8,.25,1);}
+.nav .item a{margin:0 1.5em; display: block; padding: 0.5em 0; color: #222; text-decoration: none; font-weight: 400; font-size: 1.6rem; transition: color 0.3s cubic-bezier(.25,.8,.25,1);}
 .nav .item a:hover, .nav .item a:focus{color: #ef4438;}
 .nav .item:last-child a{margin:0}
 .nav .item i{font-size: 1.2rem; cursor: pointer; margin: 0 0 0 6px;}
@@ -154,7 +154,7 @@ button.button, input[type="submit"].button {cursor: pointer; font-family: inheri
 .search .autocomplete-items a.autocomplete-active{background: #ef4438; color: #ffffff;}
 
 /* Slideshow */
-.slideshow{user-select: none; display: none; width: 100%; max-width: 1180px; overflow: hidden; height: auto; margin: 0 auto;}
+.slideshow{user-select: none; display: none; width: 100%; overflow: hidden; height: auto; margin: 0 auto;}
 .slideshow.slick-initialized{display: block;}
 .slideshow .slide{user-select: none;width: 100%; position: relative; outline: none;}
 .slideshow .slide.slick-current{z-index: 100;}
@@ -219,9 +219,9 @@ button.button, input[type="submit"].button {cursor: pointer; font-family: inheri
     }
 
 /*Intro Text*/
-.intro_text{text-align: center; width:100%; max-width:960px; padding:10px; margin:120px auto 0;}
+.intro_text{text-align: center; width:100%; max-width:960px; padding:10px; margin: 6em auto;}
     @media (max-width: 768px) {
-    .intro_text{margin: 80px auto 0;}
+    .intro_text{margin: 3em auto;}
     }
 
 /*Features*/
@@ -247,6 +247,18 @@ button.button, input[type="submit"].button {cursor: pointer; font-family: inheri
     .features .item .image{width: 25%;}
     .features .item .bar{width: 75%;}
     }
+
+/* Services */
+.services {max-width: 1200px; margin: 3em auto;}
+.services .contents {display: flex; justify-content: center; flex-flow: row wrap;}
+.services a {display: block; width: calc(33.333% - 2em); margin: 1em; padding: 2em; text-align: center; background: #fff; box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08); text-decoration: none; color: inherit; transition: 250ms ease-in-out;}
+.services a:hover,
+.services a:focus {transform: translateY(-5px); box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);}
+.services a .icon {font-size: 5rem;}
+.services a img {}
+.services a .info {margin: 0.5em 0;}
+.services a .title {}
+.services a .desc {}
 
 /* Large Gallery */
 .large_gallery .group {display: flex; align-items: center; flex-flow: row wrap;}
